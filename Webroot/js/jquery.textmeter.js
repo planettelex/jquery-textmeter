@@ -24,12 +24,12 @@
 		max = max || 140;
 		settings = $.extend({
 			container: "<span></span>",
-			classname: "textmeter",
-			format: "<br/>{n} (URLs automatically shortend)",
+			className: "textmeter",
+			format: "<br/>Characters left: <strong>{n}</strong>",
 			pulse: true,
 			delay: 0,
 			ignoreRegex: null,
-			ignoreRepacementSize: 0
+			ignoreReplacementSize: 0
 		}, settings);
 		var p, timeout;
 		
@@ -38,7 +38,7 @@
 			
 			var val_length = element.val().length;
 			if (settings.ignoreRegex != null && settings.ignoreRegex.test(element.val())) {
-				val_length = element.val().replace(settings.ignoreRegex, "").length + settings.ignoreRepacementSize;
+				val_length = element.val().replace(settings.ignoreRegex, "").length + settings.ignoreReplacementSize;
 			}
 			
 			if ( val_length > max) {
@@ -80,7 +80,7 @@
 				? $(settings.container) 
 				: $(settings.container)
 					.insertAfter(this)
-					.addClass(settings.classname);
+					.addClass(settings.className);
 				
 			$(this)
 				.bind("keydown", function () { count(this, container); })
