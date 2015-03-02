@@ -35,12 +35,12 @@
 		function count(element, container) {
 			element = $(element);
 			
-			var val_length = element.val().length;
+			var valLength = element.val().length;
 			if (settings.ignoreRegex != null && settings.ignoreRegex.test(element.val())) {
-				val_length = element.val().replace(settings.ignoreRegex, "").length + settings.ignoreReplacementSize;
+				valLength = element.val().replace(settings.ignoreRegex, "").length + settings.ignoreReplacementSize;
 			}
 			
-			if ( val_length > max) {
+			if ( valLength > max) {
 			    if (settings.pulse && !p) {
 			    	pulse(container, true);
 			    }
@@ -51,11 +51,11 @@
 					window.clearTimeout(timeout);
 				}
 				timeout = window.setTimeout(function () {
-					container.html(settings.format.replace("{n}", (max - val_length)));
+					container.html(settings.format.replace("{n}", (max - valLength)));
 				}, settings.delay);
 			}
 			else {
-				container.html(settings.format.replace("{n}", (max - val_length)));
+				container.html(settings.format.replace("{n}", (max - valLength)));
 			}
 		};
 		
