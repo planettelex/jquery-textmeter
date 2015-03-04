@@ -3,31 +3,28 @@
 
 ![4]
 A jQuery plugin to count down the remaining text in a text area.
+#### [View Demos and Complete Documentation][2]
 
-### [Demos and Documentation][1]
-
-#### Requirements
+#### Requirements:
 * jQuery 1.6+
 
-#### Features
+#### Features:
 
+* Regex expression matches can be a constant length to account for URL shortening.
 * Customizable "Characters left" label.
 * Label can "pulse" on and off when the maximum characters has been exceeded.
 * Use any CSS styling you wish.
 
 
-#### Quick start
+#### Quick Start:
 
 
 ##### Step 1
 
-Include jQuery in your HTML.
+Include jQuery and jQuery Textmeter:
 
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-
-Include PT Textmeter in your HTML.
-
-	<script type="text/javascript" src="js/jquery-pt-textmeter.js"></script>
+	<script type="text/javascript" src="js/jquery-textmeter.min.js"></script>
 
 ##### Step 2
 
@@ -35,14 +32,14 @@ Have a textarea in your HTML:
 
 	<div id="content">
         <p>
-            Begin typing into the box below to see PT Textmeter in action.
+            Begin typing into the box below to see jQuery Textmeter in action.
         </p>
         <textarea rows="10" cols="10"></textarea>
     </div>
 
 ##### Step 3
 
-Add the JavaScript to your page to hook up PT Textmeter to your container.
+Add the JavaScript to textmeter your container:
 
     <script type="text/javascript">
         var pt = {};
@@ -63,15 +60,15 @@ Add the JavaScript to your page to hook up PT Textmeter to your container.
         });
     </script>
 
-See the accompanying [demo][2] for a more complete example or view [this code][3] hosted on GitHub.
+[See the demo in action][3] for a complete example.
 
 #### License
 
-##### Major components:
+##### Major Components:
 
 * jQuery: MIT/GPL license
 
-##### Everything else:
+##### Everything Else:
 
     Copyright 2015 Planet Telex, Inc.
 
@@ -88,6 +85,6 @@ See the accompanying [demo][2] for a more complete example or view [this code][3
     limitations under the License.
 
 [1]: http://www.planettelex.com
-[2]: http://www.planettelex.com/products/jquery/pt-textmeter/demo
-[3]: http://planettelexinc.github.io/jquery-pt-textmeter
-[4]: http://planettelexinc.github.io/jquery-pt-textmeter/images/demo.png
+[2]: http://www.planettelex.com/products/jquery-textmeter/demo
+[3]: http://planettelexinc.github.io/jquery-textmeter
+[4]: http://planettelexinc.github.io/jquery-textmeter/images/demo.png
