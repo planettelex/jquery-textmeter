@@ -1,9 +1,0 @@
-.settings
-.project
-/target
-.DS_Store
-*.suo
-/Webroot/Properties
-/Webroot/obj
-/Webroot/bin
-/_ReSharper.jquery-pt-textmeter
