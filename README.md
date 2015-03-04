@@ -86,5 +86,5 @@ Add the JavaScript to textmeter your container:
 
 [1]: http://www.planettelex.com
 [2]: http://www.planettelex.com/products/jquery-textmeter/demo
-[3]: http://planettelexinc.github.io/jquery-textmeter
-[4]: http://planettelexinc.github.io/jquery-textmeter/images/demo.png
+[3]: http://planettelex.github.io/jquery-textmeter
+[4]: http://planettelex.github.io/jquery-textmeter/images/demo.png
